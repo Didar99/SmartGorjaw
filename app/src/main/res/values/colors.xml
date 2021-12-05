@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF6E40</color>
+    <color name="teal_700">#FF6E40</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue_400">#FF29B6F6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_600">#FF757575</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="app_background">#F7F7F7</color>
+    <color name="blue">#5F5CF2</color>
+    <color name="bold_text">#1B1A33</color>
+    <color name="light_text">#8C8EA0</color>
+    <color name="orange">#F28C5C</color>
+    <color name="selected_text">#DDDDDD</color>
+    <color name="first_effect">#0062FF</color>
+    <color name="second_effect">#106AFB</color>
+    <color name="third_effect">#1C73FF</color>
+    <color name="fourth_effect">#3180FF</color>
+    <color name="simpleWhite">#B5D1FF</color>
+    <color name="red">#D50000</color>
+    <color name="background">#F3F3F4</color>
+    <color name="opacity">#65FFFFFF</color>
+    <color name="colorPrimary">#304FFE</color>
+    <color name="green">#00C853</color>
+    <color name="realOpacity">#00B5D1FF</color>
+    <color name="gray">#A6DFDFDF</color>
+    <color name="remoteControl">#E5E5E5</color>
+    <color name="remoteIcon">#818080</color>
+</resources>

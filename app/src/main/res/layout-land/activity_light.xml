@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:ignore="MissingDefaultResource">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/imageView8"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_170hsdp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_12hsdp"
+        android:layout_marginEnd="@dimen/_38hsdp"
+        android:layout_marginBottom="@dimen/_12hsdp"
+        android:clickable="false"
+        android:focusable="false"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#E6E6E6" />
+
+
+    <TextView
+        android:id="@+id/t_LightData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16hsdp"
+        android:layout_marginTop="@dimen/_16hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/data"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_13font_ssp"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/t_LightData5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/lights"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_11font_ssp"
+        app:layout_constraintBottom_toTopOf="@+id/lamp_seek"
+        app:layout_constraintStart_toStartOf="@+id/lamp_seek" />
+
+    <TextView
+        android:id="@+id/t_LightData2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16hsdp"
+        android:layout_marginTop="@dimen/_16hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/function"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_13font_ssp"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/t_LightData3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16hsdp"
+        android:layout_marginTop="@dimen/_14hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/dan"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_9font_ssp"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/t_LightData2" />
+
+    <TextView
+        android:id="@+id/t_LightData4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16hsdp"
+        android:layout_marginTop="@dimen/_10hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/to"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_9font_ssp"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/t_LightData3" />
+
+    <TextView
+        android:id="@+id/t_LIntensive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16hsdp"
+        android:layout_marginTop="@dimen/_14hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/lights"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_9font_ssp"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/t_LightData" />
+
+    <TextView
+        android:id="@+id/t_LEnergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16hsdp"
+        android:layout_marginTop="@dimen/_10hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/wastedEnergy"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_9font_ssp"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/t_LIntensive" />
+
+    <TextView
+        android:id="@+id/t_LEnergyCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16hsdp"
+        android:layout_marginTop="@dimen/_10hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/energyPrice"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_9font_ssp"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/t_LEnergy" />
+
+    <TextView
+        android:id="@+id/t_LEnergyCost2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10hsdp"
+        android:layout_marginEnd="@dimen/_16hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/tmt0"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_9font_ssp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/t_LEnergy" />
+
+    <TextView
+        android:id="@+id/t_LEnergyCost5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/_8_30_pm"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_9font_ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/t_LightData3"
+        app:layout_constraintStart_toEndOf="@+id/t_LightData3"
+        app:layout_constraintTop_toTopOf="@+id/t_LightData3" />
+
+    <TextView
+        android:id="@+id/t_LEnergyCost6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/_21_40_pm"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_9font_ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/t_LightData4"
+        app:layout_constraintStart_toEndOf="@+id/t_LightData4"
+        app:layout_constraintTop_toTopOf="@+id/t_LightData4" />
+
+    <TextView
+        android:id="@+id/t_LEnergyCost3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16hsdp"
+        android:layout_marginBottom="@dimen/_10hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/_2_1_kwt"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_9font_ssp"
+        app:layout_constraintBottom_toTopOf="@+id/t_LEnergyCost2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/imageView9"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_32hsdp"
+        android:layout_height="@dimen/_45hsdp"
+        android:layout_marginStart="@dimen/_16hsdp"
+        android:elevation="18dp"
+        android:paddingHorizontal="@dimen/_5hsdp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_create"
+        app:iconSize="@dimen/_19hsdp"
+        app:iconTint="@color/gray_600"
+        app:layout_constraintBottom_toBottomOf="@+id/t_LEnergyCost6"
+        app:layout_constraintStart_toEndOf="@+id/t_LEnergyCost5"
+        app:layout_constraintTop_toTopOf="@+id/t_LEnergyCost5"
+        app:layout_constraintVertical_bias="0.49"
+        app:rippleColor="#E6E6E6"
+        app:strokeColor="@color/selected_text"
+        app:strokeWidth="2dp" />
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/imageView91"-->
+<!--        style="@style/Widget.MaterialComponents.Button"-->
+<!--        android:layout_width="@dimen/_22hsdp"-->
+<!--        android:layout_height="@dimen/_32hsdp"-->
+<!--        android:layout_marginStart="@dimen/_6hsdp"-->
+<!--        android:elevation="18dp"-->
+<!--        android:paddingHorizontal="@dimen/_5hsdp"-->
+<!--        app:backgroundTint="@color/selected_text"-->
+<!--        app:cornerRadius="12dp"-->
+<!--        app:icon="@drawable/ic_clear"-->
+<!--        app:iconSize="@dimen/_12hsdp"-->
+<!--        app:iconTint="@color/gray_600"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/imageView9"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/imageView9"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/imageView9"-->
+<!--        app:layout_constraintVertical_bias="0.669"-->
+<!--        app:rippleColor="#FFFFFF"-->
+<!--        app:strokeColor="@color/selected_text"-->
+<!--        app:strokeWidth="2dp" />-->
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1hsdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/selected_text"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        android:contentDescription="@string/data" />
+
+    <TextView
+        android:id="@+id/txt_LDegree"
+        android:layout_width="@dimen/_30hsdp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16hsdp"
+        android:layout_marginBottom="@dimen/_10hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/percent25"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_9font_ssp"
+        app:layout_constraintBottom_toTopOf="@+id/t_LEnergyCost3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8" />
+
+<!--    <SeekBar-->
+<!--        android:id="@+id/lamp_seek"-->
+<!--        android:layout_width="@dimen/_220hsdp"-->
+<!--        android:layout_height="@dimen/_57hsdp"-->
+<!--        android:layout_marginStart="@dimen/_25hsdp"-->
+<!--        android:layout_marginBottom="@dimen/_35hsdp"-->
+<!--        android:max="4"-->
+<!--        android:progress="0"-->
+<!--        android:progressDrawable="@drawable/seek_light"-->
+<!--        android:rotation="0"-->
+<!--        android:thumb="@drawable/thumb"-->
+<!--        android:thumbOffset="-5dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />  -->
+
+    <ImageView
+        android:id="@+id/lamp_seek"
+        android:layout_width="@dimen/_220hsdp"
+        android:layout_height="@dimen/_47hsdp"
+        android:layout_marginStart="@dimen/_25hsdp"
+        android:layout_marginBottom="@dimen/_35hsdp"
+        android:max="4"
+        android:progress="0"
+        android:progressDrawable="@drawable/seek_light"
+        android:rotation="0"
+        android:thumb="@drawable/thumb"
+        android:thumbOffset="-5dp"
+        android:background="@drawable/device_panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="@dimen/_93hsdp"
+        android:layout_height="@dimen/_150hsdp"
+        android:layout_marginStart="@dimen/_93hsdp"
+        android:contentDescription="@string/lamp"
+        android:elevation="8dp"
+        android:src="@drawable/light3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:layout_width="@dimen/_70hsdp"
+        android:layout_height="@dimen/_137hsdp"
+        android:layout_marginStart="@dimen/_31hsdp"
+        android:contentDescription="@string/lamp"
+        android:elevation="5dp"
+        android:src="@drawable/light3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:layout_width="@dimen/_70hsdp"
+        android:layout_height="@dimen/_128hsdp"
+        android:layout_marginStart="@dimen/_170hsdp"
+        android:contentDescription="@string/lamp"
+        android:src="@drawable/light3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/one_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent25"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_11font_ssp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/lamp_seek"
+        app:layout_constraintEnd_toEndOf="@+id/lamp_seek"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="@+id/lamp_seek"
+        app:layout_constraintTop_toTopOf="@+id/lamp_seek" />
+
+    <TextView
+        android:id="@+id/two_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent50"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_11font_ssp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/lamp_seek"
+        app:layout_constraintEnd_toEndOf="@+id/lamp_seek"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="@+id/lamp_seek"
+        app:layout_constraintTop_toTopOf="@+id/lamp_seek"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <TextView
+        android:id="@+id/three_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent75"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_11font_ssp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/lamp_seek"
+        app:layout_constraintEnd_toEndOf="@+id/lamp_seek"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="@+id/lamp_seek"
+        app:layout_constraintTop_toTopOf="@+id/lamp_seek"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <TextView
+        android:id="@+id/four_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent100"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_11font_ssp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/lamp_seek"
+        app:layout_constraintEnd_toEndOf="@+id/lamp_seek"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="@+id/lamp_seek"
+        app:layout_constraintTop_toTopOf="@+id/lamp_seek"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <TextView
+        android:id="@+id/per0"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="@string/percent0"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lamp_seek"
+        app:layout_constraintEnd_toEndOf="@+id/lamp_seek"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lamp_seek"
+        app:layout_constraintTop_toTopOf="@+id/lamp_seek" />
+
+    <TextView
+        android:id="@+id/per25"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="@string/percent25"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lamp_seek"
+        app:layout_constraintEnd_toEndOf="@+id/lamp_seek"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/lamp_seek"
+        app:layout_constraintTop_toTopOf="@+id/lamp_seek" />
+
+    <TextView
+        android:id="@+id/per50"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="@string/percent50"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lamp_seek"
+        app:layout_constraintEnd_toEndOf="@+id/lamp_seek"
+        app:layout_constraintStart_toStartOf="@+id/lamp_seek"
+        app:layout_constraintTop_toTopOf="@+id/lamp_seek" />
+
+    <TextView
+        android:id="@+id/per75"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="@string/percent75"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lamp_seek"
+        app:layout_constraintEnd_toEndOf="@+id/lamp_seek"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/lamp_seek"
+        app:layout_constraintTop_toTopOf="@+id/lamp_seek" />
+
+    <TextView
+        android:id="@+id/per100"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="@string/percent100"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lamp_seek"
+        app:layout_constraintEnd_toEndOf="@+id/lamp_seek"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/lamp_seek"
+        app:layout_constraintTop_toTopOf="@+id/lamp_seek" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

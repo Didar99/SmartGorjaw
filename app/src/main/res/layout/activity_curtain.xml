@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".CurtainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/imageView203"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_22hsdp"
+        android:layout_height="@dimen/_32hsdp"
+        android:layout_marginStart="36dp"
+        android:elevation="@dimen/mtrl_btn_elevation"
+        android:paddingHorizontal="@dimen/_5hsdp"
+        app:backgroundTint="@color/selected_text"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_clear"
+        app:iconSize="@dimen/_12hsdp"
+        app:iconTint="@color/gray_600"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="@+id/imageView19"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/selected_text"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/t_LEnergyCost16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/_21_40_pm"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_9font_ssp"
+        app:layout_constraintStart_toStartOf="@+id/t_LEnergyCost15"
+        app:layout_constraintTop_toTopOf="@+id/t_LightData18" />
+
+    <TextView
+        android:id="@+id/t_LEnergyCost15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/_8_30_pm"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_9font_ssp"
+        app:layout_constraintStart_toEndOf="@+id/t_LightData17"
+        app:layout_constraintTop_toTopOf="@+id/t_LightData17" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/imageView17"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120hsdp"
+        android:layout_marginStart="@dimen/_16hsdp"
+        android:layout_marginEnd="@dimen/_16hsdp"
+        android:clickable="false"
+        android:focusable="false"
+        app:backgroundTint="@color/app_background"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:layout_constraintVertical_bias="0.85"
+        app:rippleColor="#E6E6E6" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/imageView19"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_37hsdp"
+        android:layout_height="@dimen/_50hsdp"
+        android:layout_marginStart="36dp"
+        android:elevation="@dimen/mtrl_btn_elevation"
+        android:paddingHorizontal="@dimen/_5hsdp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/ic_create"
+        app:iconSize="@dimen/_22hsdp"
+        app:iconTint="@color/gray_600"
+        app:layout_constraintBottom_toBottomOf="@+id/t_LEnergyCost15"
+        app:layout_constraintStart_toEndOf="@+id/t_LEnergyCost15"
+        app:layout_constraintTop_toTopOf="@+id/t_LEnergyCost15"
+        app:layout_constraintVertical_bias="0.23"
+        app:rippleColor="#E6E6E6"
+        app:strokeColor="@color/selected_text"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/t_LightData18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/settings2"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_9font_ssp"
+        app:layout_constraintStart_toStartOf="@+id/t_LightData17"
+        app:layout_constraintTop_toBottomOf="@+id/t_LightData17" />
+
+    <TextView
+        android:id="@+id/t_LightData17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_17hsdp"
+        android:layout_marginTop="@dimen/_20hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/settings1"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_9font_ssp"
+        app:layout_constraintStart_toStartOf="@+id/imageView17"
+        app:layout_constraintTop_toBottomOf="@+id/t_LightData16" />
+
+    <TextView
+        android:id="@+id/t_LightData16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16hsdp"
+        android:layout_marginTop="@dimen/_16hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/function"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_13font_ssp"
+        app:layout_constraintStart_toStartOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+    <TextView
+        android:id="@+id/about_curtain_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30hsdp"
+        android:layout_marginTop="@dimen/_12hsdp"
+        android:layout_marginEnd="34dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/desc_curtain"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_11font_ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/curtain_txt" />
+
+    <TextView
+        android:id="@+id/curtain_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20hsdp"
+        android:layout_marginTop="@dimen/_30hsdp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/curtain_system"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_17font_ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="@dimen/_150hsdp"
+        android:layout_height="@dimen/_150hsdp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/curtain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_curtain_txt"
+        app:layout_constraintVertical_bias="0.293"
+        android:contentDescription="@string/curtain" />
+
+    <io.github.controlwear.virtual.joystick.android.JoystickView
+        android:id="@+id/joystickView"
+        android:layout_width="@dimen/_130hsdp"
+        android:layout_height="@dimen/_130hsdp"
+        android:layout_marginStart="100dp"
+        android:elevation="5dp"
+        app:JV_buttonColor="@color/remoteIcon"
+        app:JV_buttonDirection="vertical"
+        app:JV_buttonSizeRatio="18%"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/imageView18"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_30hsdp"
+        android:layout_height="@dimen/_150hsdp"
+        android:contentDescription="@string/curtain"
+        android:src="@drawable/curtain_panel"
+        app:layout_constraintBottom_toBottomOf="@+id/joystickView"
+        app:layout_constraintEnd_toEndOf="@+id/joystickView"
+        app:layout_constraintStart_toStartOf="@+id/joystickView"
+        app:layout_constraintTop_toTopOf="@+id/joystickView"
+        app:layout_constraintVertical_bias="0.55" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

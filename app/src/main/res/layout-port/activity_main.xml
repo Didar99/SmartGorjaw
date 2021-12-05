@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:id="@+id/coordinator"
+    tools:ignore="MissingDefaultResource">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170hsdp"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp"
+        android:background="@color/app_background"
+        android:theme="@style/Theme.TabletGorjav.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/app_background"
+            app:statusBarScrim="@color/app_background"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:theme="@style/CustomToolbarTheme"
+            app:toolbarId="@+id/toolbar">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:maxImageSize="@dimen/_18hsdp"
+                app:fabCustomSize="@dimen/_30hsdp"
+                app:rippleColor="@color/white"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_20hsdp"
+                android:layout_marginTop="@dimen/_30hsdp"
+                android:src="@drawable/settings"
+                android:tint="@color/app_background"
+                app:backgroundTint="@color/white"
+                android:contentDescription="@string/app_name" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabNet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:maxImageSize="@dimen/_18hsdp"
+                app:fabCustomSize="@dimen/_30hsdp"
+                app:rippleColor="@color/white"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_60hsdp"
+                android:layout_marginTop="@dimen/_30hsdp"
+                android:src="@drawable/cloud"
+                android:tint="@color/app_background"
+                app:backgroundTint="#FFFFFF"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_dashboard"
+                android:textColor="@color/bold_text"
+                android:textSize="@dimen/_13font_ssp"
+                android:textStyle="bold"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_28hsdp"
+                android:layout_marginBottom="@dimen/_100hsdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_44hsdp"
+                android:layout_marginBottom="@dimen/_67hsdp"
+                android:text="@string/water"
+                android:textColor="#49495C"
+                android:textSize="@dimen/_10font_ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_174hsdp"
+                android:layout_marginBottom="@dimen/_67hsdp"
+                android:text="@string/electric"
+                android:textColor="#49495C"
+                android:textSize="@dimen/_10font_ssp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recent_devices"
+                android:textColor="#575B5E"
+                android:textSize="@dimen/_10font_ssp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_28hsdp"
+                android:layout_marginBottom="@dimen/_5hsdp"/>
+
+            <TextView
+                android:id="@+id/t_waterValue"
+                android:layout_width="@dimen/_50hsdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_46hsdp"
+                android:layout_marginBottom="@dimen/_49hsdp"
+                android:elevation="2dp"
+                android:text="@string/test_num3"
+                android:textColor="#575B5E"
+                android:textSize="@dimen/_9font_ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_100hsdp"
+                android:layout_marginBottom="@dimen/_49hsdp"
+                android:elevation="2dp"
+                android:text="@string/litre"
+                android:textColor="#575B5E"
+                android:textSize="@dimen/_9font_ssp" />
+
+            <TextView
+                android:id="@+id/t_wattValue"
+                android:layout_width="@dimen/_50hsdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_177hsdp"
+                android:layout_marginBottom="@dimen/_49hsdp"
+                android:elevation="2dp"
+                android:text="@string/test_num3"
+                android:textColor="#575B5E"
+                android:textSize="@dimen/_9font_ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_228hsdp"
+                android:layout_marginBottom="@dimen/_49hsdp"
+                android:elevation="2dp"
+                android:text="@string/kwt"
+                android:textColor="#575B5E"
+                android:textSize="@dimen/_9font_ssp" />
+
+            <TextView
+                android:id="@+id/t_ScanNetwork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_10font_ssp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="@dimen/_28hsdp"
+                android:layout_marginBottom="@dimen/_5hsdp"/>
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:src="@drawable/ic_add"-->
+            <!--                android:layout_gravity="bottom|end"-->
+            <!--                android:layout_marginEnd="112dp"-->
+            <!--                app:tint="@color/light_blue_400" />-->
+
+            <ImageView
+                android:layout_width="@dimen/_90hsdp"
+                android:layout_height="@dimen/_20hsdp"
+                android:src="@drawable/place_measure"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_37hsdp"
+                android:layout_marginBottom="@dimen/_45hsdp"
+                android:contentDescription="@string/water" />
+
+            <ImageView
+                android:layout_width="@dimen/_90hsdp"
+                android:layout_height="@dimen/_20hsdp"
+                android:src="@drawable/place_measure"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_169hsdp"
+                android:layout_marginBottom="@dimen/_45hsdp"
+                android:contentDescription="@string/electric" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:theme="@style/AppToolbar"
+                app:popupTheme="@style/Theme.TabletGorjav.PopupOverlay" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

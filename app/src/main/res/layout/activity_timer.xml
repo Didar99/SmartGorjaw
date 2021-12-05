@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".TimerActivity">
+
+    <ImageView
+        android:id="@+id/imageView12we"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90hsdp"
+        android:layout_margin="@dimen/_8hsdp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/data" />
+
+    <TextView
+        android:id="@+id/txtAir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/conditioner"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_12font_ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12we"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12we"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/imageView12we"
+        app:layout_constraintTop_toTopOf="@+id/imageView12we"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/tAirTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noTime"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_12font_ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12we"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12we"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/imageView12we"
+        app:layout_constraintTop_toTopOf="@+id/imageView12we"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/tSocketTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noTime"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_12font_ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12we"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12we"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/imageView12we"
+        app:layout_constraintTop_toTopOf="@+id/imageView12we"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/txtSocket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_12font_ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12we"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12we"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/imageView12we"
+        app:layout_constraintTop_toTopOf="@+id/imageView12we"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clickAir"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_22hsdp"
+        android:layout_height="@dimen/_32hsdp"
+        android:elevation="18dp"
+        android:paddingHorizontal="@dimen/_5hsdp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_create"
+        app:iconSize="@dimen/_12hsdp"
+        app:iconTint="@color/gray_600"
+        app:layout_constraintBottom_toBottomOf="@+id/tAirTime"
+        app:layout_constraintEnd_toStartOf="@+id/cancelAir"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/tAirTime"
+        app:layout_constraintTop_toTopOf="@+id/tAirTime"
+        app:rippleColor="#E6E6E6"
+        app:strokeColor="@color/selected_text"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancelAir"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_22hsdp"
+        android:layout_height="@dimen/_32hsdp"
+        android:layout_marginEnd="@dimen/_20hsdp"
+        android:elevation="18dp"
+        android:paddingHorizontal="@dimen/_5hsdp"
+        app:backgroundTint="@color/selected_text"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_clear"
+        app:iconSize="@dimen/_12hsdp"
+        app:iconTint="@color/gray_600"
+        app:layout_constraintBottom_toBottomOf="@+id/clickAir"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12we"
+        app:layout_constraintTop_toTopOf="@+id/clickAir"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/selected_text"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clickSocket"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_22hsdp"
+        android:layout_height="@dimen/_32hsdp"
+        android:elevation="18dp"
+        android:paddingHorizontal="@dimen/_5hsdp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_create"
+        app:iconSize="@dimen/_12hsdp"
+        app:iconTint="@color/gray_600"
+        app:layout_constraintBottom_toBottomOf="@+id/tSocketTime"
+        app:layout_constraintEnd_toStartOf="@+id/cancelSocket"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/tSocketTime"
+        app:layout_constraintTop_toTopOf="@+id/tSocketTime"
+        app:rippleColor="#E6E6E6"
+        app:strokeColor="@color/selected_text"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancelSocket"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_22hsdp"
+        android:layout_height="@dimen/_32hsdp"
+        android:layout_marginEnd="@dimen/_20hsdp"
+        android:elevation="18dp"
+        android:paddingHorizontal="@dimen/_5hsdp"
+        app:backgroundTint="@color/selected_text"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_clear"
+        app:iconSize="@dimen/_12hsdp"
+        app:iconTint="@color/gray_600"
+        app:layout_constraintBottom_toBottomOf="@+id/clickSocket"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12we"
+        app:layout_constraintTop_toTopOf="@+id/clickSocket"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="@color/selected_text"
+        app:strokeWidth="2dp" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12we" />
+
+    <Button
+        android:id="@+id/BtnSetTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
+
+    <Button
+        android:id="@+id/BtnSetTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

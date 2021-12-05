@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/b_Panel"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_114hsdp"
+        android:layout_height="@dimen/_128hsdp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        android:clickable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#304FFE"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/b_Icon"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_28hsdp"
+        android:layout_height="@dimen/_38hsdp"
+        android:background="@color/transparent"
+        android:clickable="false"
+        android:elevation="8dp"
+        android:focusable="false"
+        android:paddingHorizontal="@dimen/_3hsdp"
+        app:cornerRadius="@dimen/_20hsdp"
+        app:icon="@drawable/ic_add"
+        app:iconSize="@dimen/_25hsdp"
+        app:iconTint="#2979FF"
+        app:layout_constraintBottom_toBottomOf="@+id/b_Panel"
+        app:layout_constraintEnd_toEndOf="@+id/b_Panel"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="@+id/b_Panel"
+        app:layout_constraintTop_toTopOf="@+id/b_Panel"
+        app:layout_constraintVertical_bias="0.87"
+        app:rippleColor="#D50000" />
+
+    <TextView
+        android:id="@+id/t_DeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_9hsdp"
+        android:layout_marginTop="@dimen/_15hsdp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/lamp"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_12font_ssp"
+        android:clickable="false"
+        android:focusable="false"
+        app:layout_constraintStart_toStartOf="@+id/b_Panel"
+        app:layout_constraintTop_toTopOf="@+id/b_Panel"/>
+
+    <TextView
+        android:id="@+id/t_SubName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/lamp"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_9font_ssp"
+        android:clickable="false"
+        android:focusable="false"
+        app:layout_constraintStart_toStartOf="@+id/t_DeviceName"
+        app:layout_constraintTop_toBottomOf="@+id/t_DeviceName" />
+
+    <TextView
+        android:id="@+id/t_DevicePx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:elevation="8dp"
+        android:text="@string/step"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_6font_ssp"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/t_SubName"
+        app:layout_constraintTop_toTopOf="@+id/t_SubName"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

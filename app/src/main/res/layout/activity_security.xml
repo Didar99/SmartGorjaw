@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <TextView
+        android:id="@+id/security_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20hsdp"
+        android:layout_marginTop="@dimen/_20hsdp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/securitySys"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_17font_ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/about_security_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16hsdp"
+        android:layout_marginTop="@dimen/_8hsdp"
+        android:layout_marginEnd="@dimen/_8hsdp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/securityDesc"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_11font_ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/security_txt"
+        app:layout_constraintTop_toBottomOf="@+id/security_txt" />
+
+    <TextView
+        android:id="@+id/t_LightData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/function"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_15font_ssp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_unusual"
+        app:layout_constraintStart_toStartOf="@+id/about_security_txt"
+        app:layout_constraintTop_toBottomOf="@+id/about_security_txt"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <TextView
+        android:id="@+id/t_LightData10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/FUNCTION"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_15font_ssp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_police"
+        app:layout_constraintStart_toStartOf="@+id/t_LightData"
+        app:layout_constraintTop_toBottomOf="@+id/btn_unlock" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_unlock"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_150hsdp"
+        android:layout_height="@dimen/_155hsdp"
+        android:padding="@dimen/_38hsdp"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="@dimen/_500hsdp"
+        app:icon="@drawable/ic_secure"
+        app:iconSize="@dimen/_76hsdp"
+        app:iconTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55"
+        app:rippleColor="@color/blue"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_usual"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_93hsdp"
+        android:layout_height="@dimen/_40hsdp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/secure"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_10font_ssp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_unusual"
+        app:rippleColor="@color/blue" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_police"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_93hsdp"
+        android:layout_height="@dimen/_40hsdp"
+        android:layout_marginTop="@dimen/_44hsdp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/police"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_10font_ssp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_unusual"
+        app:layout_constraintStart_toStartOf="@+id/btn_unusual"
+        app:layout_constraintTop_toBottomOf="@+id/btn_unlock"
+        app:rippleColor="#2979FF" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_fire"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_93hsdp"
+        android:layout_height="@dimen/_40hsdp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/fire"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_10font_ssp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_usual"
+        app:layout_constraintStart_toStartOf="@+id/btn_usual"
+        app:layout_constraintTop_toTopOf="@+id/btn_police"
+        app:rippleColor="#2979FF" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_panik"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_93hsdp"
+        android:layout_height="@dimen/_40hsdp"
+        android:layout_marginTop="@dimen/_8hsdp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/panic"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_10font_ssp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@+id/btn_police"
+        app:layout_constraintTop_toBottomOf="@+id/btn_police"
+        app:rippleColor="#2979FF" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_unusual"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_93hsdp"
+        android:layout_height="@dimen/_40hsdp"
+        android:layout_marginBottom="@dimen/_20hsdp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/ordinary"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_10font_ssp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_unlock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#00C853" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

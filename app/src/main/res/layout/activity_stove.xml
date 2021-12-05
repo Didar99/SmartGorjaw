@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".StoveActivity">
+
+
+    <TextView
+        android:id="@+id/t_LightData11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20hsdp"
+        android:elevation="8dp"
+        android:text="@string/power"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_12font_ssp"
+        app:layout_constraintStart_toStartOf="@+id/about_stove_txt"
+        app:layout_constraintTop_toBottomOf="@+id/about_stove_txt" />
+
+    <Switch
+        android:id="@+id/sw_stove"
+        style="@style/Color1SwitchStyle"
+        android:layout_width="@dimen/_35hsdp"
+        android:layout_height="@dimen/_20hsdp"
+        android:layout_marginStart="8dp"
+        android:checked="false"
+        android:elevation="8dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="@+id/t_LightData11"
+        app:layout_constraintStart_toEndOf="@+id/t_LightData11"
+        app:layout_constraintTop_toTopOf="@+id/t_LightData11"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    <TextView
+        android:id="@+id/stove_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20hsdp"
+        android:layout_marginTop="@dimen/_30hsdp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/stove_system"
+        android:textColor="@color/bold_text"
+        android:textSize="@dimen/_17font_ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/about_stove_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16hsdp"
+        android:layout_marginTop="@dimen/_16hsdp"
+        android:layout_marginEnd="@dimen/_16hsdp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/desc_stove"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_11font_ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stove_txt" />
+
+    <com.unity.tabletgorjav.Croller
+        android:id="@+id/cooker_analog"
+        android:layout_width="@dimen/_120hsdp"
+        android:layout_height="@dimen/_120hsdp"
+        android:layout_centerInParent="true"
+        app:back_circle_color="@color/light_blue_400"
+        app:enabled="true"
+        app:indicator_color="@color/blue"
+        app:indicator_width="5"
+        app:is_continuous="true"
+        app:label=""
+        app:label_color="@color/selected_text"
+        app:label_disabled_color="#6200EA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37"
+        app:main_circle_color="#FFFFFF"
+        app:max="9"
+        app:progress_primary_color="@color/light_text"
+        app:progress_primary_stroke_width="5"
+        app:progress_secondary_color="@color/remoteControl"
+        app:progress_secondary_stroke_width="10"
+        app:start_offset="40" />
+
+    <com.unity.tabletgorjav.Croller
+        android:id="@+id/cooker2_analog"
+        android:layout_width="@dimen/_120hsdp"
+        android:layout_height="@dimen/_120hsdp"
+        android:layout_centerInParent="true"
+        app:back_circle_color="@color/light_blue_400"
+        app:enabled="true"
+        app:indicator_color="@color/blue"
+        app:indicator_width="5"
+        app:is_continuous="true"
+        app:label=""
+        app:label_color="@color/selected_text"
+        app:label_disabled_color="#6200EA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79"
+        app:main_circle_color="#FFFFFF"
+        app:max="9"
+        app:progress_primary_color="@color/light_text"
+        app:progress_primary_stroke_width="5"
+        app:progress_secondary_color="@color/remoteControl"
+        app:progress_secondary_stroke_width="10"
+        app:start_offset="40" />
+
+    <TextView
+        android:id="@+id/analog_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stove_a"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_14font_ssp"
+        app:layout_constraintEnd_toEndOf="@+id/cooker_analog"
+        app:layout_constraintStart_toStartOf="@+id/cooker_analog"
+        app:layout_constraintTop_toBottomOf="@+id/cooker_analog" />
+
+    <TextView
+        android:id="@+id/analog2_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stove_b"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_14font_ssp"
+        app:layout_constraintEnd_toEndOf="@+id/cooker2_analog"
+        app:layout_constraintStart_toStartOf="@+id/cooker2_analog"
+        app:layout_constraintTop_toBottomOf="@+id/cooker2_analog" />
+
+    <TextView
+        android:id="@+id/pro_cook1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        android:textSize="@dimen/_14font_ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/cooker_analog"
+        app:layout_constraintEnd_toEndOf="@+id/cooker_analog"
+        app:layout_constraintStart_toStartOf="@+id/cooker_analog"
+        app:layout_constraintTop_toTopOf="@+id/cooker_analog" />
+
+    <TextView
+        android:id="@+id/pro_cook2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        android:textSize="@dimen/_14font_ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/cooker2_analog"
+        app:layout_constraintEnd_toEndOf="@+id/cooker2_analog"
+        app:layout_constraintStart_toStartOf="@+id/cooker2_analog"
+        app:layout_constraintTop_toTopOf="@+id/cooker2_analog" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
